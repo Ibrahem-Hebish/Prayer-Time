@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواقيت الصلاة</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/axios/dist/axios.js"></script>
+</head>
+<body>
+    <div class="title">
+        <h1>مواقيت الصلاة</h1>
+    </div>
+    <div class="content">
+        <div class="side">
+            <h2>Select any city</h2>
+            <div class="list">
+                <input list="cities" name="list" placeholder="Select a city">
+                <div class="datalist">
+                    <datalist id="cities">
+                        <option value="cairo,Egypt">
+                        <option value="London,United Kingdom">
+                        <option value="Dubai,United Arab Emirates">
+                    </datalist>
+                </div>
+                
+            </div>
+            <div class="button">
+                <input type="submit" value="حفظ">
+            </div>
+        </div>
+        <div class="maincontent">
+            <div class="date">
+                <div class="m"></div>
+                <div class="logo">
+                    <img src="helal.png" alt="logo" id="logo">
+                </div>
+                <div class="h"></div>
+            </div>
+            <div class="day"></div>
+            <div class="table">
+                <div class="other">
+                    <img src="الكعبة.png" alt="" class="k">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="c"> المدينة</th>
+                            <th>الصلاة</th>
+                            <th>التوقيت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="city" rowspan="5"></td>
+                            <td class="prayer">Fajr</td>
+                            <td class="time"></td>
+                        </tr>
+                        <tr>
+                            <td class="prayer">Dhuhr</td>
+                            <td class="time"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="prayer">Asr</td>
+                            <td class="time"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="prayer">Maghrib</td>
+                            <td class="time"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="prayer">Isha</td>
+                            <td class="time"></td>
+                        </tr>
+                    </tbody>
+                   </table>
+            </div>
+          
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="ayah">
+          وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ 
+            ﴿٤٣ البقرة﴾
+         </div>
+         <hr>
+         <br>
+         <div class="hadith">
+            عن أبي هريرة أن النبي صلى الله عليه وسلم قال: «أول ما يحاسب به العبد يوم القيامة يحاسب بصلاته فإن صلحت فقد أفلح وأنجح وإن فسدت فقد خاب وخسر»(أخرجه الترمذي في سننه وصححه الألبانى في صحيح سنن الترمذي حديث رقم 413).
+         </div>
+    </div>
+    <script src="scrypt.js"></script>
+</body>
+</html>
